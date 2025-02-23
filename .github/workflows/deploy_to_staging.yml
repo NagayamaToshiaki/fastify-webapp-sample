@@ -24,9 +24,9 @@ jobs:
       - name: Link to the environment
         run: railway environment staging
         env:
-          RAILWAY_TOKEN: ${{ secrets.Railway_STAGING_TOKEN }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_STAGING_TOKEN }}
 
       - name: Deploy
         run: railway up --ci --service fastify-webapp-sample
         env:
-          RAILWAY_TOKEN: ${{ secrets.Railway_STAGING_TOKEN }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_STAGING_TOKEN }}
